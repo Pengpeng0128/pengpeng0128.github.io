@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pengpeng</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Pengpeng</description>
+    <generator>Hugo -- 0.154.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 02 Jan 2026 23:29:53 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Leo</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 02 Jan 2026 23:29:53 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;你好，我是 &lt;strong&gt;鹏鹏（Leo）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这是我的个人博客，用来记录学习过程、思考碎片，以及一些我认为值得被认真对待的内容。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;我在做什么&#34;&gt;我在做什么&lt;/h2&gt;
+&lt;p&gt;我本科背景是会计与财务相关，目前正处在人生一个比较重要的过渡阶段：&lt;br&gt;
+从学生，走向真正进入职场。&lt;/p&gt;
+&lt;p&gt;我对以下方向长期感兴趣：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;财务与会计（审计、财务管理、制度与合规）&lt;/li&gt;
+&lt;li&gt;技术如何改变信息处理与表达方式&lt;/li&gt;
+&lt;li&gt;用更清晰、更结构化的方式理解世界&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我不太喜欢空泛的表达，也不太追求“看起来很厉害”的叙述，更在意事情&lt;strong&gt;是否讲清楚、是否站得住逻辑&lt;/strong&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么会有这个博客&#34;&gt;为什么会有这个博客&lt;/h2&gt;
+&lt;p&gt;我搭建这个博客，并不是为了展示结果，而是为了记录过程。&lt;/p&gt;
+&lt;p&gt;在学习、工作和生活中，我发现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;很多真正有价值的理解，来自反复推敲&lt;/li&gt;
+&lt;li&gt;写下来，是整理思路最可靠的方式&lt;/li&gt;
+&lt;li&gt;长期积累，远比短期输出重要&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以这里的内容，可能包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学习笔记（偏向原理和结构）&lt;/li&gt;
+&lt;li&gt;一些工具或方法的整理&lt;/li&gt;
+&lt;li&gt;对具体问题的拆解过程&lt;/li&gt;
+&lt;li&gt;偶尔的随想与反思&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更新频率不一定高，但我会尽量让每一篇都对得起自己。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;关于这个网站&#34;&gt;关于这个网站&lt;/h2&gt;
+&lt;p&gt;这个博客使用 &lt;strong&gt;Hugo&lt;/strong&gt; 搭建，部署在 &lt;strong&gt;GitHub Pages&lt;/strong&gt; 上。&lt;br&gt;
+整体风格偏向简洁、安静、可阅读性优先。&lt;/p&gt;
+&lt;p&gt;我希望它更像一个长期存在的笔记本，而不是一个追逐流量的展示页。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
+&lt;p&gt;如果你有想交流的内容，或者只是想打个招呼：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub：后续会放链接&lt;/li&gt;
+&lt;li&gt;其他方式：以后再慢慢补充&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感谢你来到这里。&lt;/p&gt;
+&lt;p&gt;如果你愿意，希望这里的内容，能在某个时刻对你有所帮助。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leo欢迎您</title>
+      <link>http://localhost:1313/posts/hello/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:17 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hello/</guid>
+      <description>&lt;h1 id=&#34;欢迎&#34;&gt;欢迎&lt;/h1&gt;
+&lt;p&gt;This is Leo, who got a Bachelor Degree Major in Accountant.&lt;/p&gt;
+&lt;p&gt;欢迎来到 &lt;strong&gt;Leo的博客&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这是我用 Hugo + GitHub Pages 搭建的博客&lt;/p&gt;
+&lt;p&gt;接下来我会在这里记录：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学习&lt;/li&gt;
+&lt;li&gt;技术&lt;/li&gt;
+&lt;li&gt;生活&lt;/li&gt;
+&lt;li&gt;数码设备&lt;/li&gt;
+&lt;li&gt;一些思考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To be, or not to be, that is the question.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
