@@ -1,0 +1,24 @@
+baseURL = "https://pengpeng0128.github.io/"
+languageCode = "zh-CN"
+title = "Pengpeng"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+
+[[menu.main]]
+  name = "主页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 3

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Pengpeng</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Pengpeng</description>
+    <generator>Hugo -- 0.154.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:17 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leo欢迎您</title>
+      <link>http://localhost:1313/posts/hello/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:17 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hello/</guid>
+      <description>&lt;h1 id=&#34;欢迎&#34;&gt;欢迎&lt;/h1&gt;
+&lt;p&gt;This is Leo, who got a Bachelor Degree Major in Accountant.&lt;/p&gt;
+&lt;p&gt;欢迎来到 &lt;strong&gt;Leo的博客&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这是我用 Hugo + GitHub Pages 搭建的博客&lt;/p&gt;
+&lt;p&gt;接下来我会在这里记录：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学习&lt;/li&gt;
+&lt;li&gt;技术&lt;/li&gt;
+&lt;li&gt;生活&lt;/li&gt;
+&lt;li&gt;数码设备&lt;/li&gt;
+&lt;li&gt;一些思考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To be, or not to be, that is the question.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
