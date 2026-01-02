@@ -3,23 +3,31 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - main
+      - main  # 你 Hugo 代码所在的分支
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ 检出仓库
       - uses: actions/checkout@v3
         with:
-          submodules: true  # 如果你用 theme submodule
+          submodules: true  # PaperMod 是 submodule，需要拉取
+
+      # 2️⃣ 安装 Hugo
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.154.0'  # 你本地的 hugo 版本
+          hugo-version: '0.154.0'  # 和你本地版本一致
+          extended: true
+
+      # 3️⃣ Build Hugo 网站
       - name: Build
         run: hugo --minify
+
+      # 4️⃣ 部署到 GitHub Pages
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v5
+        uses: peaceiris/actions-gh-pages@v5.4.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
