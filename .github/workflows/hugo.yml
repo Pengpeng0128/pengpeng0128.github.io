@@ -1,4 +1,4 @@
-name: Deploy Hugo site to GitHub Pages
+name: Pages Build and Deploy
 
 on:
   push:
@@ -6,38 +6,26 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
 
     steps:
-      # 1️⃣ 检出仓库（含 submodules）
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # 2️⃣ 安装 Hugo
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.154.0"
           extended: true
 
-      # 3️⃣ 构建静态站点
-      - name: Build site
+      - name: Build
         run: hugo --minify
 
-      # 4️⃣ 将 public/ 输出目录打包成 artifact
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: public
-
-  deploy:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    steps:
-      # 5️⃣ 部署到 Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+        with:
+          folder: public
