@@ -3,10 +3,15 @@ languageCode = "zh-CN"
 title = "Pengpeng"
 theme = "PaperMod"
 
+# 是否开启 Hugo extended
+enableGitInfo = true
+
 [params]
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
+  mainSections = ["posts"]   # 指定博客文章所在 section
+
 
 [[menu.main]]
   name = "主页"
