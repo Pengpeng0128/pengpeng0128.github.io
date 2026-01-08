@@ -3,10 +3,66 @@ languageCode = 'zh-cn'
 title = '@鹏鹏'
 theme = 'PaperMod'
 
-[params.homeInfoParams]
-    Title = "Hi there 👋"
-    Content = "欢迎来到我的个人博客，这里记录我的学习和生活。"
+# 1. 输出配置：为了让搜索功能生效
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
 
+# 2. 全局参数设置 (这就是那个大抽屉)
+[params]
+    env = "production"
+    # 文章列表页只显示摘要
+    displayFullPostContent = false
+    # 基础开关
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowCodeCopyButtons = true
+    # 目录设置
+    ShowToc = true
+    TocOpen = true
+
+    # 首页信息配置
+    
+
+    [params.profileMode]
+        enabled = true # 开启个人资料模式
+        title = "你好，欢迎光~临~ 👋"
+        subtitle = "欢迎来到鹏鹏的个人博客，这里记录我的学习和生活。"
+        imageUrl = "img/avatar.png" # 在 profileMode 下，又是用 imageUrl 了
+        imageWidth = 300
+        imageHeight = 300
+        imageDisplay = "rounded" # 让头像变圆
+
+
+    # 搜索功能的核心配置
+    [params.fuseConfig]
+        shouldSort = true
+        location = 0
+        distance = 1000
+        threshold = 0.4
+        minMatchCharLength = 2
+        keys = ["title", "permalink", "summary", "content"]
+
+# 3. 社交图标 (注意：这些是在 params 之外的独立数组)
 [[params.socialIcons]]
     name = "github"
     url = "https://github.com/pengpeng0128"
+
+[[params.socialIcons]]
+    name = "bilibili"
+    url = "https://space.bilibili.com/76770275"
+
+[[params.socialIcons]]
+    name = "email"
+    url = "mailto:leolee176@icloud.com"
+
+# 4. 菜单栏
+[[menu.main]]
+    name = "🔍文章"
+    url = "posts"
+    weight = 1
+
+
+[[menu.main]]
+    name = "🔍搜索"
+    url = "search"
+    weight = 10
