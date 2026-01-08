@@ -1,0 +1,12 @@
+baseURL = 'https://pengpeng0128.github.io/'
+languageCode = 'zh-cn'
+title = '@鹏鹏'
+theme = 'PaperMod'
+
+[params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "欢迎来到我的个人博客，这里记录我的学习和生活。"
+
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/pengpeng0128"

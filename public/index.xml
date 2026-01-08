@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>@鹏鹏</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on @鹏鹏</description>
+    <generator>Hugo -- 0.154.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 09 Jan 2026 02:08:43 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel 学习-2026/01/09</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Fri, 09 Jan 2026 02:08:43 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;设置工作簿权限密码&#34;&gt;设置工作簿权限密码&lt;/h2&gt;
+&lt;p&gt;​			保存的时候在 &lt;em&gt;&lt;strong&gt;浏览窗口&lt;/strong&gt;&lt;/em&gt; 里面选择 &lt;em&gt;&lt;strong&gt;工具&lt;/strong&gt;&lt;/em&gt; &amp;ndash;&amp;gt; &lt;em&gt;&lt;strong&gt;常规选项&lt;/strong&gt;&lt;/em&gt;，就可以设置打开的密码或者修改的密码。&lt;/p&gt;
+&lt;h2 id=&#34;撤销工作簿权限密码&#34;&gt;撤销工作簿权限密码&lt;/h2&gt;
+&lt;p&gt;​			可以在浏览窗口中将密码设置为空格。&lt;/p&gt;
+&lt;p&gt;​			打开的密码可以在保护工作表里面删除。&lt;/p&gt;
+&lt;h2 id=&#34;保护工作表&#34;&gt;保护工作表&lt;/h2&gt;
+&lt;p&gt;​			在&lt;em&gt;&lt;strong&gt;需要保护的工作表&lt;/strong&gt;&lt;/em&gt;标签右键单击，选择&lt;em&gt;&lt;strong&gt;保护工作表&lt;/strong&gt;&lt;/em&gt;，然后输入密码。&lt;/p&gt;
+&lt;p&gt;​			下方可以选择无需密码可以进行的操作，但若有允许的操作，需把&lt;em&gt;&lt;strong&gt;前两项&lt;/strong&gt;&lt;/em&gt;打勾，否则&lt;em&gt;&lt;strong&gt;无法选择单元格&lt;/strong&gt;&lt;/em&gt;！！！&lt;/p&gt;
+&lt;p&gt;​			如果需要撤销保护工作表，直接在该工作表的标签右键单击，选择撤销保护工作表，然后输入密码。&lt;/p&gt;
+&lt;h2 id=&#34;选择行和列&#34;&gt;选择行和列&lt;/h2&gt;
+&lt;p&gt;​			除了用鼠标移动到对应行和列标签进行选择外，还可以使用键盘进行选择（有些快捷键可能会被占用）&lt;/p&gt;
+&lt;p&gt;​			选择&lt;em&gt;&lt;strong&gt;当前单元格所在行&lt;/strong&gt;&lt;/em&gt;：Shift + Space&lt;/p&gt;
+&lt;p&gt;​			选择&lt;em&gt;&lt;strong&gt;当前单元格所在列&lt;/strong&gt;&lt;/em&gt;：Ctrl + Space&lt;/p&gt;
+&lt;p&gt;​			要&lt;em&gt;&lt;strong&gt;连续选中几行&lt;/strong&gt;&lt;/em&gt;：先选中当前行，松开Space，按住Shift，再选择上下箭头&lt;/p&gt;
+&lt;p&gt;​			要&lt;em&gt;&lt;strong&gt;连续选中几列&lt;/strong&gt;&lt;/em&gt;：先选中当前列，松开Space，按住Shift，再选择左右箭头&lt;/p&gt;
+&lt;h2 id=&#34;插入行和列&#34;&gt;插入行和列&lt;/h2&gt;
+&lt;p&gt;​			先选择当前行或列，按Ctrl + Shift + Plus；&lt;/p&gt;
+&lt;p&gt;​			如果要插入n行或n列，先连续选中n行或n列，然后Ctrl + Shift + Plus。&lt;/p&gt;
+&lt;h2 id=&#34;删除行和列&#34;&gt;删除行和列&lt;/h2&gt;
+&lt;p&gt;​			先选择当前行或列，按Ctrl + Minus ；&lt;/p&gt;
+&lt;p&gt;​			如果要插入n行或n列，先连续选中n行或n列，然后Ctrl + Minus。&lt;/p&gt;
+&lt;h2 id=&#34;移动行和列&#34;&gt;移动行和列&lt;/h2&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
