@@ -61,8 +61,12 @@ theme = 'PaperMod'
     url = "posts"
     weight = 1
 
-
 [[menu.main]]
     name = "🔍搜索"
     url = "search"
+    weight = 9
+
+[[menu.main]]
+    name = "🔍About Me"
+    url = "/about"
     weight = 10

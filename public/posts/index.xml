@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Excel 学习-2026/01/09</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/2026-01-09/</link>
       <pubDate>Fri, 09 Jan 2026 02:08:43 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/2026-01-09/</guid>
       <description>&lt;h2 id=&#34;设置工作簿权限密码&#34;&gt;设置工作簿权限密码&lt;/h2&gt;
 &lt;p&gt;​			保存的时候在 &lt;em&gt;&lt;strong&gt;浏览窗口&lt;/strong&gt;&lt;/em&gt; 里面选择 &lt;em&gt;&lt;strong&gt;工具&lt;/strong&gt;&lt;/em&gt; &amp;ndash;&amp;gt; &lt;em&gt;&lt;strong&gt;常规选项&lt;/strong&gt;&lt;/em&gt;，就可以设置打开的密码或者修改的密码。&lt;/p&gt;
 &lt;h2 id=&#34;撤销工作簿权限密码&#34;&gt;撤销工作簿权限密码&lt;/h2&gt;
@@ -35,6 +35,8 @@
 &lt;p&gt;​			先选择当前行或列，按Ctrl + Minus ；&lt;/p&gt;
 &lt;p&gt;​			如果要插入n行或n列，先连续选中n行或n列，然后Ctrl + Minus。&lt;/p&gt;
 &lt;h2 id=&#34;移动行和列&#34;&gt;移动行和列&lt;/h2&gt;
+&lt;p&gt;​			方法1：使用剪切功能移动，不会留下空行&lt;/p&gt;
+&lt;p&gt;​			方法2：使用鼠标+Shift移动，会留下空行&lt;/p&gt;
 &lt;p&gt;​&lt;/p&gt;
 &lt;p&gt;​&lt;/p&gt;</description>
     </item>

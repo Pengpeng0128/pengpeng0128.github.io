@@ -69,3 +69,14 @@
     background: none !important;
     border-radius: 0 !important;
 }
+
+::selection {
+    background-color: #1c9820 !important; /* 选中时的背景颜色 */
+    color: #ffffff !important;             /* 选中时的文字颜色，白色能保证清晰度 */
+}
+
+/* 针对火狐浏览器的兼容处理 */
+::-moz-selection {
+    background-color: #1c9820 !important;
+    color: #ffffff !important;
+}
