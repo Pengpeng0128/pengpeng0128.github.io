@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>@鹏鹏</title>
+    <title>Blog@Leo</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on @鹏鹏</description>
+    <description>Recent content on Blog@Leo</description>
     <generator>Hugo -- 0.154.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 09 Jan 2026 04:29:20 +0800</lastBuildDate>
@@ -13,7 +13,45 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 09 Jan 2026 04:29:20 +0800</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;-嘿我是鹏鹏-pengpeng-欢迎您&#34;&gt;👋 嘿，我是鹏鹏 (Pengpeng) 欢迎您！&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;“The best way to predict the future is to build it.”&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  							—— Alan Kay
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-技能树-what-i-do&#34;&gt;🛠 技能树 (What I Do)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;技术探索&lt;/strong&gt;：热衷于前端技术和静态网站构建（比如你现在看到的这个 Hugo 博客）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;设计审美&lt;/strong&gt;：偏爱 &lt;strong&gt;Material Design 3&lt;/strong&gt; 设计语言，喜欢简洁而有意义的交互。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;持续学习&lt;/strong&gt;：相信“种一棵树最好的时间是十年前，其次是现在”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-为什么写博客&#34;&gt;🖋 为什么写博客？&lt;/h3&gt;
+&lt;p&gt;在这个信息碎片化的时代，我希望通过文字：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;沉淀知识&lt;/strong&gt;：把学过的东西讲清楚，才是真正的掌握。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;连接同类&lt;/strong&gt;：如果你在这里发现了共鸣，欢迎随时交流。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;记录成长&lt;/strong&gt;：看回过去的文字，就像在和过去的自己对话。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-个人标签&#34;&gt;☕ 个人标签&lt;/h3&gt;
+&lt;p&gt;🧪 &lt;strong&gt;极简主义者&lt;/strong&gt;：喜欢干净的代码和简洁的生活。&lt;/p&gt;
+&lt;p&gt;🌿 &lt;strong&gt;绿色系爱好者&lt;/strong&gt;：本博客的深绿配色 (#1c9820) 灵感来源于对自然的向往。&lt;/p&gt;
+&lt;p&gt;📚 &lt;strong&gt;终身学习者&lt;/strong&gt;：对新鲜事物始终保持好奇。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-找到我&#34;&gt;📬 找到我&lt;/h3&gt;
+&lt;p&gt;如果你有任何问题，或者单纯想打个招呼，可以通过以下方式联系我：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/pengpeng0128&#34;&gt;@pengpeng0128&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:leolee176@icloud.com&#34;&gt;leolee176@icloud.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Excel 学习-2026/01/09</title>
