@@ -19,7 +19,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      # 升级到 0.146.0 以上，这里直接用 0.146.0
+      HUGO_VERSION: 0.146.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -33,6 +34,7 @@ jobs:
           fetch-depth: 0
       - name: Build with Hugo
         run: |
+          # 添加 --minify 减小体积，--gc 清理无用资源
           hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
