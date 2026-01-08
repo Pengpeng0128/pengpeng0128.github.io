@@ -1,0 +1,71 @@
+/* ============================================================
+   MATERIAL DESIGN 3 - 稳重加深版
+   ============================================================ */
+
+/* 1. 社交图标：保持单行，悬停使用加深的 MD3 绿色 */
+.social-icons {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+}
+
+.social-icons a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important; /* 初始圆形 */
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
+    color: var(--secondary);
+}
+
+.social-icons a:hover {
+    /* 使用你之前喜欢的 MD3 绿色调 */
+    background-color: #c8e6c9 !important; /* 稍深一点的绿色背景 */
+    color: #1b5e20 !important;           /* 极深绿色文字/图标 */
+    border-radius: 12px !important;       /* 悬停变成圆角矩形 */
+    transform: translateY(-2px);
+}
+
+/* 2. 菜单导航 (文章、搜索)：悬停颜色同步加深 */
+.menu #menu li a {
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
+    padding: 6px 16px !important;
+}
+
+.menu #menu li a:hover {
+    background-color: #c8e6c9 !important;
+    color: #1b5e20 !important;
+    border-radius: 10px !important;
+}
+
+/* 3. 文章卡片 (Posts)：维持大圆角和深色悬停边框 */
+.post-entry {
+    border-radius: 28px !important;
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1) !important;
+    border: 1px solid transparent !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-5px);
+    background: var(--entry) !important;
+    border-color: #1c9820 !important; /* 悬停时显现出深一点的绿边 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 4. 头像保持简洁（不做变形状处理，只保留极其轻微的缩放感） */
+.profile_inner img {
+    border-radius: 50% !important;
+    transition: transform 0.3s ease;
+}
+.profile_inner img:hover {
+    transform: scale(1.02);
+}
+
+/* 5. 欢迎语部分保持原样，不添加任何背景干扰 */
+.profile_inner h1, .profile_inner .description {
+    background: none !important;
+    border-radius: 0 !important;
+}
