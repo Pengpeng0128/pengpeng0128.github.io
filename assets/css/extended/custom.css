@@ -48,19 +48,30 @@
 }
 
 /* --- 3. 侧边粘性目录 (Sticky TOC) --- */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+    /* 1. 限制正文宽度，给右侧腾出空间 */
+    .main {
+        max-width: 850px !important; /* 缩小正文最大宽度 */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* 2. 重新定位目录 */
     .toc {
         position: fixed;
-        left: calc(50% + 420px); /* 稍微调远一点，避免挤压正文 */
+        /* 这里的 50% 是屏幕中线，+360px 是从中线往右挪多少 */
+        /* 如果 iPad 上依然重叠，就把 360 调大，或者把上面的 850 调小 */
+        left: calc(50% + 360px); 
         top: 120px;
-        width: 250px;
-        max-height: 80vh;
+        width: 220px; 
+        max-height: 75vh;
         overflow-y: auto;
         background: transparent;
         border: none;
         padding: 0;
         margin: 0;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        z-index: 10;
     }
 
     .toc details summary { display: none; }
