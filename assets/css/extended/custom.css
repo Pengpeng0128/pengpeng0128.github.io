@@ -1,8 +1,13 @@
 /* ============================================================
-   MATERIAL DESIGN 3 - 稳重加深版
+   MATERIAL DESIGN 3 - 核心样式汇总
    ============================================================ */
 
-/* 1. 社交图标：保持单行，悬停使用加深的 MD3 绿色 */
+/* --- 1. 基础交互：选中与导航 --- */
+::selection, ::-moz-selection {
+    background-color: #1c9820 !important;
+    color: #ffffff !important;
+}
+
 .social-icons {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -16,32 +21,19 @@
     justify-content: center;
     width: 42px !important;
     height: 42px !important;
-    border-radius: 50% !important; /* 初始圆形 */
+    border-radius: 50% !important;
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
     color: var(--secondary);
 }
 
-.social-icons a:hover {
-    /* 使用你之前喜欢的 MD3 绿色调 */
-    background-color: #c8e6c9 !important; /* 稍深一点的绿色背景 */
-    color: #1b5e20 !important;           /* 极深绿色文字/图标 */
-    border-radius: 12px !important;       /* 悬停变成圆角矩形 */
+.social-icons a:hover, .menu #menu li a:hover {
+    background-color: #c8e6c9 !important;
+    color: #1b5e20 !important;
+    border-radius: 12px !important;
     transform: translateY(-2px);
 }
 
-/* 2. 菜单导航 (文章、搜索)：悬停颜色同步加深 */
-.menu #menu li a {
-    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
-    padding: 6px 16px !important;
-}
-
-.menu #menu li a:hover {
-    background-color: #c8e6c9 !important;
-    color: #1b5e20 !important;
-    border-radius: 10px !important;
-}
-
-/* 3. 文章卡片 (Posts)：维持大圆角和深色悬停边框 */
+/* --- 2. 文章卡片 --- */
 .post-entry {
     border-radius: 28px !important;
     transition: all 0.4s cubic-bezier(0.2, 0, 0, 1) !important;
@@ -51,32 +43,59 @@
 .post-entry:hover {
     transform: translateY(-5px);
     background: var(--entry) !important;
-    border-color: #1c9820 !important; /* 悬停时显现出深一点的绿边 */
+    border-color: #1c9820 !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* 4. 头像保持简洁（不做变形状处理，只保留极其轻微的缩放感） */
+/* --- 3. 侧边粘性目录 (Sticky TOC) --- */
+@media screen and (min-width: 1280px) {
+    .toc {
+        position: fixed;
+        left: calc(50% + 420px); /* 稍微调远一点，避免挤压正文 */
+        top: 120px;
+        width: 250px;
+        max-height: 80vh;
+        overflow-y: auto;
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0.85rem;
+    }
+
+    .toc details summary { display: none; }
+    .toc .inner { display: block !important; }
+}
+
+/* 目录链接基础样式 */
+.toc a {
+    border-left: 2px solid transparent;
+    padding: 4px 8px;
+    display: block;
+    transition: all 0.2s ease;
+    color: var(--secondary);
+}
+
+/* 鼠标悬停预览 (测试 CSS 是否正常) */
+.toc a:hover {
+    color: #1c9820 !important;
+    background: #f0fdf4; /* 淡淡的绿底 */
+    border-radius: 4px;
+}
+
+/* 【核心】JS 激活后的高亮样式 */
+/* 增加 .post-content 前缀提高优先级 */
+.post-content .toc a.active {
+    color: #1c9820 !important;
+    border-left: 3px solid #1c9820 !important;
+    padding-left: 12px !important;
+    font-weight: bold !important;
+    background: transparent !important;
+}
+
+/* --- 4. 其他细节 --- */
 .profile_inner img {
     border-radius: 50% !important;
     transition: transform 0.3s ease;
 }
-.profile_inner img:hover {
-    transform: scale(1.02);
-}
-
-/* 5. 欢迎语部分保持原样，不添加任何背景干扰 */
-.profile_inner h1, .profile_inner .description {
-    background: none !important;
-    border-radius: 0 !important;
-}
-
-::selection {
-    background-color: #1c9820 !important; /* 选中时的背景颜色 */
-    color: #ffffff !important;             /* 选中时的文字颜色，白色能保证清晰度 */
-}
-
-/* 针对火狐浏览器的兼容处理 */
-::-moz-selection {
-    background-color: #1c9820 !important;
-    color: #ffffff !important;
-}
+.profile_inner img:hover { transform: scale(1.02); }
