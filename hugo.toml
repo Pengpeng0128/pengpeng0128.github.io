@@ -19,6 +19,9 @@ theme = 'PaperMod'
     # 目录设置
     ShowToc = true
     TocOpen = true
+    # 标签页替代默认小地球
+    [params.assets]
+        favicon = "/favicon.png"
 
     # 首页信息配置
     
