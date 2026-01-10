@@ -1,11 +1,16 @@
 /* ============================================================
-   MATERIAL DESIGN 3 - 核心样式汇总
+   MATERIAL DESIGN 3 - 核心样式汇总 (鹏鹏专属版)
    ============================================================ */
 
-/* --- 1. 基础交互：选中与导航 --- */
+/* --- 1. 基础交互：选中与全局导航 --- */
 ::selection, ::-moz-selection {
     background-color: #1c9820 !important;
     color: #ffffff !important;
+}
+
+/* 社交图标与导航菜单统一悬停风格 */
+.social-icons a, .menu #menu li a {
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
 }
 
 .social-icons {
@@ -22,18 +27,49 @@
     width: 42px !important;
     height: 42px !important;
     border-radius: 50% !important;
-    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) !important;
     color: var(--secondary);
 }
 
+/* 导航栏菜单项基础样式 */
+.menu #menu li a {
+    padding: 6px 16px !important;
+    margin: 0 4px !important;
+    border-radius: 8px !important;
+}
+
+/* 统一的 MD3 绿色悬停状态 */
 .social-icons a:hover, .menu #menu li a:hover {
-    background-color: #c8e6c9 !important;
-    color: #1b5e20 !important;
-    border-radius: 12px !important;
+    background-color: #c8e6c9 !important; /* 浅绿背景 */
+    color: #1b5e20 !important;           /* 深绿文字 */
+    border-radius: 12px !important;      /* 变为圆角矩形 */
     transform: translateY(-2px);
 }
 
-/* --- 2. 文章卡片 --- */
+/* --- 2. 首页个人信息 (Profile Mode) 增强 --- */
+.profile_inner {
+    padding: 15px 25px;
+    transition: all 0.4s cubic-bezier(0.2, 0, 0, 1);
+    border-radius: 28px;
+    border: 1px solid transparent;
+}
+
+/* 首页 Title 和 Subtitle 的整体悬停效果 */
+.profile_inner:hover {
+    background-color: rgba(28, 152, 32, 0.05) !important; /* 淡淡的绿意 */
+    border-color: rgba(28, 152, 32, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+.profile_inner img {
+    border-radius: 50% !important;
+    transition: transform 0.3s ease;
+}
+
+.profile_inner img:hover {
+    transform: scale(1.05);
+}
+
+/* --- 3. 文章卡片 --- */
 .post-entry {
     border-radius: 28px !important;
     transition: all 0.4s cubic-bezier(0.2, 0, 0, 1) !important;
@@ -47,20 +83,16 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* --- 3. 侧边粘性目录 (Sticky TOC) --- */
+/* --- 4. 侧边粘性目录 (Sticky TOC) --- */
 @media screen and (min-width: 1024px) {
-    /* 1. 限制正文宽度，给右侧腾出空间 */
     .main {
-        max-width: 850px !important; /* 缩小正文最大宽度 */
+        max-width: 850px !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    /* 2. 重新定位目录 */
     .toc {
         position: fixed;
-        /* 这里的 50% 是屏幕中线，+360px 是从中线往右挪多少 */
-        /* 如果 iPad 上依然重叠，就把 360 调大，或者把上面的 850 调小 */
         left: calc(50% + 360px); 
         top: 120px;
         width: 220px; 
@@ -78,7 +110,6 @@
     .toc .inner { display: block !important; }
 }
 
-/* 目录链接基础样式 */
 .toc a {
     border-left: 2px solid transparent;
     padding: 4px 8px;
@@ -87,15 +118,13 @@
     color: var(--secondary);
 }
 
-/* 鼠标悬停预览 (测试 CSS 是否正常) */
 .toc a:hover {
     color: #1c9820 !important;
-    background: #f0fdf4; /* 淡淡的绿底 */
+    background: #f0fdf4;
     border-radius: 4px;
 }
 
-/* 【核心】JS 激活后的高亮样式 */
-/* 增加 .post-content 前缀提高优先级 */
+/* JS 激活后的目录高亮样式 */
 .post-content .toc a.active {
     color: #1c9820 !important;
     border-left: 3px solid #1c9820 !important;
@@ -103,10 +132,3 @@
     font-weight: bold !important;
     background: transparent !important;
 }
-
-/* --- 4. 其他细节 --- */
-.profile_inner img {
-    border-radius: 50% !important;
-    transition: transform 0.3s ease;
-}
-.profile_inner img:hover { transform: scale(1.02); }

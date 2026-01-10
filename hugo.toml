@@ -1,6 +1,6 @@
 baseURL = 'https://pengpeng0128.github.io/'
 languageCode = 'zh-cn'
-title = 'Blog@Leo'
+title = '@鹏鹏'
 theme = 'PaperMod'
 
 # 1. 输出配置：为了让搜索功能生效
