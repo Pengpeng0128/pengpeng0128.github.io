@@ -73,7 +73,7 @@ ___
 
 全选日期的区域，按`Ctrl + 1`打开设置单元格格式菜单，分类里选择自定义，类型下面的文本框输入d，确定。
 
-我们发现变成了这样：![image-20260111071922017](C:\Users\leole\AppData\Roaming\Typora\typora-user-images\image-20260111071922017.png)
+我们发现变成了这样：![image-20260111071922017](/img/2.png)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 我们先自定义两列，一列是月份，一列是年份。
 
-![image-20260111072336431](C:\Users\leole\AppData\Roaming\Typora\typora-user-images\image-20260111072336431.png)
+![image-20260111072336431](/img/3.png)
 
 分别选中`A1:D1`和`E1:H1`然后分别合并居中，先给月份设置。单击数据Ribbon，单击**数据验证**，允许下面设置为**序列**，然后来源选择January到December所在的单元格。
 
@@ -93,7 +93,7 @@ ___
 
 首先我们准备一个这样的表格：
 
-![image-20260111073145450](C:\Users\leole\AppData\Roaming\Typora\typora-user-images\image-20260111073145450.png)
+![image-20260111073145450](/img/4.png)
 
 我们可以按`Ctrl + T`把这个表格变成一个 Table。
 
@@ -107,7 +107,7 @@ ___
 
 我们发现，表格变成了这样：
 
-![image-20260111073845602](C:\Users\leole\AppData\Roaming\Typora\typora-user-images\image-20260111073845602.png)
+![image-20260111073845602](/img/5.png)
 
 这里有两点，主要是溢出的报错和显示不完整的问题。溢出报错的原因是我们Filter函数查到了不止一个结果，但是我们只有一个单元格给他展示。这庙不够大，供不下我们这座大佛。
 
