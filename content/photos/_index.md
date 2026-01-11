@@ -11,6 +11,14 @@ title = '🖼️Photo Album'
 
 ![2](/gallery/2.png)
 
+
+
+
+
+___
+
+
+
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
     <img src="/gallery/pic1.jpg" style="border-radius: 12px; width: 100%;">
     <img src="/gallery/pic2.jpg" style="border-radius: 12px; width: 100%;">
