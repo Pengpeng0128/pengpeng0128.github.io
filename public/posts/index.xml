@@ -6,8 +6,69 @@
     <description>Recent content in Posts on @鹏鹏</description>
     <generator>Hugo -- 0.154.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Jan 2026 02:08:43 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 06:42:24 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel动态日历制作</title>
+      <link>http://localhost:1313/posts/excel_made_easy/</link>
+      <pubDate>Sun, 11 Jan 2026 06:42:24 +0800</pubDate>
+      <guid>http://localhost:1313/posts/excel_made_easy/</guid>
+      <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;闲来无事，上YouTube逛Excel，发现了在Excel里面制作动态日历的视频。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;视频原标题&lt;/strong&gt;：&lt;a href=&#34;https://youtu.be/qkay9xnJf5c?si=VrQtzTh9ljHJ_TK6&#34;&gt;Create a Dynamic Calendar From a List of Events in Excel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刚看到这个视频，只有一个大胆的想法：既然之前在Excel里面可以做各种神奇的操作，比如批量创建文件夹这种，那么以后我是不是可以把所有的工作都搬到Excel里面？至少这个日历可以当作代办和日程来做。不管那么多了，直接开始上手操作。&lt;/p&gt;
+&lt;p&gt;本文将列出视频中的主要步骤和要点。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;使用函数搭建基本框架&#34;&gt;使用函数搭建基本框架&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;基本框架&#34;&gt;基本框架&lt;/h3&gt;
+&lt;p&gt;表格区域第一行，搭建月份和年份。&lt;/p&gt;
+&lt;p&gt;表格区域第二行，搭建星期。&lt;/p&gt;
+&lt;p&gt;第三行开始搭建日期，第四行暂时留空，从第三行开始，每两行一组，一共预留6组。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;B3&lt;/code&gt;单元格键入函数：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Excel&#34; data-lang=&#34;Excel&#34;&gt;=Sequence(1,7)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样我们就得到了第一行。Sequence函数生成了一个1行7列的序列，第三个参数未设置，那么会生成一行1-7的数字，但从&lt;code&gt;B5&lt;/code&gt;单元格开始，我们需要输入下面的函数：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Excel&#34; data-lang=&#34;Excel&#34;&gt;=Sequence(1,7,H3+1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后把&lt;code&gt;B5&lt;/code&gt;单元格的内容粘贴直到&lt;code&gt;B13&lt;/code&gt;单元格。目前我们就搭建好了一个基本的框架。如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20260111070308715&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/1.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;调整日期&#34;&gt;调整日期&lt;/h3&gt;
+&lt;p&gt;但是我们不是每个月1号一定是星期一，所以我们需要对日期做一些调整。&lt;/p&gt;
+&lt;p&gt;在右边某个单元格输入，例如&lt;code&gt;J2&lt;/code&gt;单元格：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Excel&#34; data-lang=&#34;Excel&#34;&gt;=1&amp;amp;A1&amp;amp;E1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;得到：&lt;code&gt;1January2026&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后在&lt;code&gt;B3&lt;/code&gt;单元格里面修改Sequence函数：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Excel&#34; data-lang=&#34;Excel&#34;&gt;=Sequence(1,7,J2-WEEKDAY(J2,2)+1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样就能偏移到正确的单元格了。但是我们发现这样操作后，&lt;code&gt;B3&lt;/code&gt;单元格变成了**&lt;code&gt;46020&lt;/code&gt;**，但这不是我们想要的。&lt;/p&gt;
+&lt;p&gt;全选日期的区域，按&lt;code&gt;Ctrl + 1&lt;/code&gt;打开设置单元格格式菜单，分类里选择自定义，类型下面的文本框输入d，确定。&lt;/p&gt;
+&lt;p&gt;我们发现变成了这样：&lt;img alt=&#34;image-20260111071922017&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/2.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;给月份和年份设置数据验证下拉菜单&#34;&gt;给月份和年份设置数据验证下拉菜单&lt;/h3&gt;
+&lt;p&gt;我们先自定义两列，一列是月份，一列是年份。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20260111072336431&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;分别选中&lt;code&gt;A1:D1&lt;/code&gt;和&lt;code&gt;E1:H1&lt;/code&gt;然后分别合并居中，先给月份设置。单击数据Ribbon，单击&lt;strong&gt;数据验证&lt;/strong&gt;，允许下面设置为&lt;strong&gt;序列&lt;/strong&gt;，然后来源选择January到December所在的单元格。&lt;/p&gt;
+&lt;p&gt;年份设置参照月份设置的方法。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;连接事项到日历&#34;&gt;连接事项到日历&lt;/h3&gt;
+&lt;p&gt;首先我们准备一个这样的表格：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20260111073145450&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我们可以按&lt;code&gt;Ctrl + T&lt;/code&gt;把这个表格变成一个 Table。&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;B4&lt;/code&gt;单元格我们可以插入以下函数：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Excel&#34; data-lang=&#34;Excel&#34;&gt;=FILTER(表1[Todos],表1[Date]=B3,&amp;#34;&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后选中需要填充的单元格，向右向下填充。&lt;/p&gt;
+&lt;p&gt;我们发现，表格变成了这样：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20260111073845602&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里有两点，主要是溢出的报错和显示不完整的问题。溢出报错的原因是我们Filter函数查到了不止一个结果，但是我们只有一个单元格给他展示。这庙不够大，供不下我们这座大佛。&lt;/p&gt;
+&lt;p&gt;那我们可以使用Textjoin函数来解决溢出这个问题。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-Excel&#34; data-lang=&#34;Excel&#34;&gt;=TEXTJOIN(CHAR(10),TRUE,FILTER(表1[Todos],表1[Date]=B3,&amp;#34;&amp;#34;))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参数1要输入一个分隔符，我们现在的分隔符是char(10)，这是换行符的意思。&lt;/p&gt;
+&lt;p&gt;参数2要输入是否忽略空。True为忽略。&lt;/p&gt;
+&lt;p&gt;参数3开始就是我们需要合并的数据。&lt;/p&gt;
+&lt;p&gt;这样你会发现我们的两个数据之间好像只是长在了一起。并没有实现换行。这时我们需要检查以下我们的&lt;strong&gt;自动换行是否打开&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么我们的基础搭建就算完成了。接下来就是一些格式的优化了。目前我们搭建出来的真的挺难评的哈哈哈。&lt;/p&gt;
+&lt;hr&gt;</description>
+    </item>
     <item>
       <title>Excel 基本操作</title>
       <link>http://localhost:1313/posts/2026-01-09/</link>

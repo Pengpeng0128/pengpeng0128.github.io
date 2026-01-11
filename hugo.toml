@@ -73,3 +73,8 @@ theme = 'PaperMod'
     name = "🌱About Me"
     url = "/about"
     weight = 10
+
+[[menu.main]]
+    name = "🖼️相册"
+    url = "photos"
+    weight = 3  

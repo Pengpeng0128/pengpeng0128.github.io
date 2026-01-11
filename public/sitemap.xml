@@ -3,15 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-09T04:29:20+08:00</lastmod>
+    <lastmod>2026-01-11T08:03:37+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/photos/</loc>
+    <lastmod>2026-01-11T08:03:37+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/excel_made_easy/</loc>
+    <lastmod>2026-01-11T06:42:24+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-01-11T06:42:24+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-01-09T04:29:20+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2026-01-09/</loc>
-    <lastmod>2026-01-09T02:08:43+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-01-09T02:08:43+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
