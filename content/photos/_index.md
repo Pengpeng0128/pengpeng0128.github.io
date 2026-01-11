@@ -9,7 +9,9 @@ title = '🖼️Photo Album'
 
 ![1](/gallery/1.JPG)
 
-![2](/gallery/2.png)
+
+
+
 
 
 
