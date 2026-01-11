@@ -78,3 +78,6 @@ theme = 'PaperMod'
     name = "🖼️相册"
     url = "photos"
     weight = 3  
+
+[markup.goldmark.renderer]
+    unsafe = true
